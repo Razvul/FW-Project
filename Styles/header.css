@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url(../Imagini/Bitmap.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .container {
+  height: 820px;
+  max-width: 1440px;
+  color: white;
+  margin: 0 auto;
+  padding: 65px 0 0 167px;
+}
+header .container h2 {
+  font-weight: bold;
+  font-size: 48px;
+  font-weight: lighter;
+  line-height: 48px;
+}
+header .container div {
+  width: 527px;
+  height: 364px;
+  margin-top: 124px;
+  color: #5c6779;
+}
+header .container div h1 {
+  font-size: 80px;
+  font-weight: normal;
+  line-height: 80px;
+}
+header .container div p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 10px;
+  width: 445px;
+}
+header .container div button {
+  width: 245px;
+  height: 64px;
+  font-weight: bold;
+  background-color: #111111;
+  text-transform: uppercase;
+  margin-top: 40px;
+  border: 1px solid #5c6779;
+  color: #5c6779;
+}
+header .container div button:hover {
+  color: black;
+  background-color: #ffffff;
+  border: 1px solid black;
+  transition: all ease-in-out 0.15s;
+}/*# sourceMappingURL=header.css.map */

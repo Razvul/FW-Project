@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div.container1 {
+  margin: 0 auto;
+  width: 1440px;
+  padding-left: 167px;
+}
+div.container1 .container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+div.container1 .container img.imagine {
+  width: 540px;
+  height: 720px;
+  margin: -60px 0 0 -45px;
+}
+div.container1 .container div {
+  margin-left: 125px;
+  width: 445px;
+}
+div.container1 .container div h2 {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: bold;
+}
+div.container1 .container div p {
+  margin-top: 27px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+div.container2 {
+  margin: 0 auto;
+  width: 1440px;
+  padding-left: 167px;
+  position: relative;
+}
+div.container2 .container {
+  display: flex;
+  justify-content: start;
+  width: 1110px;
+  align-items: center;
+}
+div.container2 .container img.imagine {
+  width: 540px;
+  height: 720px;
+  margin-bottom: -70px;
+}
+div.container2 .container div {
+  width: 455px;
+  margin-right: 136px;
+}
+div.container2 .container div h2 {
+  font-size: 48px;
+  line-height: 48px;
+}
+div.container2 .container div p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+div.container3 {
+  padding: 160px 125px;
+  background-color: #111111;
+  color: #ffffff;
+}
+div.container3 .container {
+  width: 1110px;
+  height: 441px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+div.container3 .container .text {
+  width: 445px;
+  height: 213px;
+}
+div.container3 .container .text h2 {
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 27px;
+}
+div.container3 .container .text p {
+  font-size: 20px;
+  line-height: 30px;
+}
+div.container3 .container #listaArticole {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 540px;
+  margin-left: 125px;
+}
+div.container3 .container #listaArticole article {
+  display: flex;
+  height: 96px;
+}
+div.container3 .container #listaArticole img {
+  width: 128px;
+  height: 96px;
+  margin-right: 30px;
+}
+div.container3 .container #listaArticole div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+div.container4 {
+  margin: 160px auto;
+  position: relative;
+}
+div.container4 .container {
+  width: 1110px;
+  height: 600px;
+  display: flex;
+  margin: 0 auto;
+}
+div.container4 .container img {
+  margin-right: 125px;
+}
+div.container4 .container div.booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+div.container4 .container div.booking h2 {
+  font-size: 48px;
+  line-height: 48px;
+}
+div.container4 .container div.booking p {
+  font-size: 20px;
+  line-height: 26px;
+  margin-top: 14px;
+}
+div.container4 .container div.booking button {
+  background-color: #111111;
+  color: #ffffff;
+  width: 245px;
+  height: 64px;
+  font-size: 17px;
+}
+div.container4 .container div.booking button:hover {
+  color: black;
+  background-color: #ffffff;
+  border: 1px solid black;
+  transition: all ease-in-out 0.15s;
+}
+div.container4 .container div.booking .grup-events {
+  display: flex;
+  margin-left: -125px;
+}
+div.container4 .container div.booking .grup-events .grup-linii {
+  margin-right: 32px;
+  margin-top: 10px;
+}
+div.container4 .container div.booking .grup-events .grup-linii .linie-event {
+  height: 1px;
+  width: 95px;
+  margin-bottom: 26px;
+}
+div.container4 .container div.booking .grup-events .grup-linii .color {
+  background-color: #9e7f66;
+}
+div.container4 .container div.booking .grup-events ul.events {
+  list-style: none;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+div.container4 .container div.booking .grup-events ul.events li {
+  text-transform: uppercase;
+}
+div.container4 .container div.booking .grup-events ul.events li a {
+  margin: 0 0 12px 0;
+  padding: 0;
+  text-decoration: none;
+  color: #4C4C4C;
+  cursor: pointer;
+}
+
+div.container5 {
+  height: 240px;
+  background-image: url(../Imagini/Footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+div.container5 h2 {
+  font-size: 48px;
+  line-height: 48px;
+}
+div.container5 button {
+  width: 245px;
+  height: 64px;
+  font-size: 17px;
+  color: #ffffff;
+  background-color: black;
+  border: 1px solid #ffffff;
+}
+div.container5 button:hover {
+  color: black;
+  background-color: #ffffff;
+  border: 1px solid black;
+  transition: all ease-in-out 0.15s;
+}
+
+div.burger {
+  width: 160px;
+  height: 76px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
+}
+div.burger > .linie {
+  margin-bottom: 6px;
+  height: 20px;
+  width: 160px;
+  background-color: #9e7f66;
+}
+
+#burger1 {
+  position: absolute;
+  right: 5%;
+  top: 48%;
+}
+
+#burger2 {
+  position: absolute;
+  left: 10%;
+  top: -5%;
+}/*# sourceMappingURL=container.css.map */

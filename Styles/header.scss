@@ -1,0 +1,67 @@
+@import 'colors';
+@import 'format';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(../Imagini/Bitmap.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        height: 820px;
+        max-width: 1440px;
+        color: white;
+        margin: 0 auto;
+        padding: 65px 0 0 167px;
+
+        h2 {
+            font-weight: bold;
+            font-size: $h2FontSize;
+            font-weight: lighter;
+            line-height: $h2LineHeight;
+        }
+
+        div {
+            width: 527px;
+            height: 364px;
+            margin-top: 124px;
+            color: $shuttleGray;
+
+            h1 {
+                font-size: $h1FontSize;
+                font-weight: normal;
+                line-height: $h1LineHeight;
+            }
+
+            p {
+                font-size: $p2FontSize;
+                line-height: $p2LineHeight;
+                margin-top: 10px;
+                width: 445px;
+            }
+
+            button {
+                width: 245px;
+                height: 64px;
+                font-weight: bold;
+                background-color: $codGray;
+                text-transform: uppercase;
+                margin-top: 40px;
+                border: 1px solid $shuttleGray;
+                color: $shuttleGray;
+
+                &:hover{
+                    color: black;
+                    background-color: $white;
+                    border: 1px solid black;
+                    transition: all ease-in-out 0.15s;
+                }
+            }
+        }
+    }
+}

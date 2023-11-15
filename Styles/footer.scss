@@ -1,0 +1,37 @@
+@import 'colors';
+@import 'format';
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+footer{
+    background-color: $codGray;
+    color: $white;
+    height: 240px;
+    display: flex;
+
+    .container{
+        width: 1110px;
+        height: 86px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+
+        h2{
+            font-size: $h2FontSize;
+        }
+
+        div.info1, div.info2{
+            width: 244px;
+            height: 84px;
+
+            p{
+                font-size: $p2FontSize;
+                line-height: $p2LineHeight;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

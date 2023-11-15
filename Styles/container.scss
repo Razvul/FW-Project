@@ -1,0 +1,279 @@
+@import 'colors';
+@import 'format';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div.container1 {
+    margin: 0 auto;
+    width: 1440px;
+    padding-left: 167px;
+
+    .container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        img.imagine {
+            width: 540px;
+            height: 720px;
+            margin: -60px 0 0 -45px;
+        }
+
+        div {
+            margin-left: calc(830px - 540px - 165px);
+            width: 445px;
+
+            h2 {
+                font-size: $h2FontSize;
+                line-height: $h2LineHeight;
+                font-weight: bold;
+            }
+
+            p {
+                margin-top: 27px;
+                font-size: $p2FontSize;
+                line-height: $p2LineHeight;
+            }
+        }
+    }
+}
+
+div.container2 {
+    margin: 0 auto;
+    width: 1440px;
+    padding-left: 167px;
+    position: relative;
+
+    .container {
+        display: flex;
+        justify-content: start;
+        width: 1110px;
+        align-items: center;
+
+        img.imagine {
+            width: 540px;
+            height: 720px;
+            margin-bottom: -70px;
+        }
+
+        div {
+            width: 455px;
+            margin-right: 136px;
+
+            h2 {
+                font-size: $h2FontSize;
+                line-height: $h2LineHeight;
+            }
+
+            p {
+                font-size: $p2FontSize;
+                line-height: $p2LineHeight;
+            }
+        }
+    }
+}
+
+div.container3 {
+    padding: 160px 125px;
+    background-color: $codGray;
+    color: $white;
+
+    .container {
+        width: 1110px;
+        height: 441px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        .text {
+            width: 445px;
+            height: 213px;
+
+            h2 {
+                font-size: $h2FontSize;
+                line-height: $h2LineHeight;
+                margin-bottom: 27px;
+            }
+
+            p {
+                font-size: $p1FontSize;
+                line-height: $p1LineHeight;
+            }
+        }
+
+        #listaArticole {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 540px;
+            margin-left: 125px;
+
+            article {
+                display: flex;
+                height: 96px;
+            }
+
+            img {
+                width: 128px;
+                height: 96px;
+                margin-right: 30px;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+div.container4 {
+    margin: 160px auto;
+    position: relative;
+
+    .container {
+        width: 1110px;
+        height: 600px;
+        display: flex;
+        margin: 0 auto;
+
+        img {
+            margin-right: 125px;
+        }
+
+        div.booking {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            h2 {
+                font-size: $h2FontSize;
+                line-height: $h2LineHeight;
+            }
+
+            p {
+                font-size: $p1FontSize;
+                line-height: $p2LineHeight;
+                margin-top: 14px;
+            }
+
+            button {
+                background-color: $codGray;
+                color: $white;
+                width: 245px;
+                height: 64px;
+                font-size: 17px;
+
+                &:hover {
+                    color: black;
+                    background-color: $white;
+                    border: 1px solid black;
+                    transition: all ease-in-out 0.15s;
+                }
+            }
+
+            .grup-events {
+                display: flex;
+                margin-left: -125px;
+
+                .grup-linii {
+                    margin-right: 32px;
+                    margin-top: 10px;
+
+                    .linie-event {
+                        height: 1px;
+                        width: 95px;
+                        margin-bottom: 26px;
+                    }
+
+                    .color{
+                        background-color: $beaver;
+                    }
+                }
+
+                ul.events {
+                    list-style: none;
+                    height: 72px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    li {
+                        text-transform: uppercase;
+                        a{
+                            margin: 0 0 12px 0;
+                            padding: 0;
+                            text-decoration: none;
+                            color: $gri;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.container5 {
+    height: 240px;
+    background-image: url(../Imagini/Footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    h2 {
+        font-size: $h2FontSize;
+        line-height: $h2LineHeight;
+    }
+
+    button {
+        width: 245px;
+        height: 64px;
+        font-size: 17px;
+        color: $white;
+        background-color: black;
+        border: 1px solid $white;
+
+        &:hover {
+            color: black;
+            background-color: $white;
+            border: 1px solid black;
+            transition: all ease-in-out 0.15s;
+        }
+    }
+}
+
+div.burger {
+    width: 160px;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6px;
+
+    >.linie {
+        margin-bottom: 6px;
+        height: 20px;
+        width: 160px;
+        background-color: $beaver;
+    }
+}
+
+#burger1 {
+    position: absolute;
+    right: 5%;
+    top: 48%;
+}
+
+#burger2 {
+    position: absolute;
+    left: 10%;
+    top: -5%;
+}

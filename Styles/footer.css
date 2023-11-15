@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  background-color: #111111;
+  color: #ffffff;
+  height: 240px;
+  display: flex;
+}
+footer .container {
+  width: 1110px;
+  height: 86px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+footer .container h2 {
+  font-size: 48px;
+}
+footer .container div.info1, footer .container div.info2 {
+  width: 244px;
+  height: 84px;
+}
+footer .container div.info1 p, footer .container div.info2 p {
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=footer.css.map */
