@@ -1,17 +1,20 @@
 @import 'colors';
 @import 'format';
-*{
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-footer{
+
+footer {
     background-color: $codGray;
     color: $white;
     height: 240px;
     display: flex;
+    font-family: 'League Spartan';
 
-    .container{
+    .container {
         width: 1110px;
         height: 86px;
         display: flex;
@@ -19,18 +22,57 @@ footer{
         align-items: center;
         margin: auto;
 
-        h2{
+        h2 {
             font-size: $h2FontSize;
         }
 
-        div.info1, div.info2{
+        div.info1,
+        div.info2 {
             width: 244px;
             height: 84px;
 
-            p{
+            p {
                 font-size: $p2FontSize;
                 line-height: $p2LineHeight;
                 text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    footer {
+        position: relative;
+        height: auto;
+
+        .container {
+            width: auto;
+            height: auto;
+            flex-direction: column;
+            padding-top: 66px;
+            padding-bottom: 62px;
+
+            h2 {
+                position: absolute;
+                top: 64px;
+                left: 39px;
+            }
+            div.info1{
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    footer{
+        .container{
+            text-align: center;
+            h2{
+                position: static;
+            }
+            div.info1{
+                line-height: $h4FontSize;
+                margin: 42px 0;
             }
         }
     }

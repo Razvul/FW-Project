@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan";
+}
+
+div.container1 {
+  background-image: url("../Imagini/Modal1.jpg");
+  width: auto;
+  padding-bottom: 154px;
+  padding-top: 65px;
+  position: relative;
+}
+div.container1 .container {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 600px;
+  margin: 258px 165px 0 165px;
+}
+div.container1 .container h2 {
+  font-size: 48px;
+  line-height: 48px;
+  position: absolute;
+  left: 165px;
+  top: 65px;
+}
+div.container1 .container .text {
+  width: 445px;
+  height: 188px;
+}
+div.container1 .container .text h1 {
+  font-size: 80px;
+  line-height: 80px;
+  margin-bottom: 18px;
+}
+div.container1 .container .text p {
+  font-size: 20px;
+  line-height: 30px;
+}
+div.container1 .container div.modal {
+  background-color: #ffffff;
+  width: 540px;
+  height: 545px;
+  margin-bottom: -100px;
+  padding: 50px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+}
+div.container1 .container div.modal input[type=text],
+div.container1 .container div.modal input[type=email] {
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  line-height: 28px;
+}
+div.container1 .container div.modal input[type=text]:active, div.container1 .container div.modal input[type=text]:focus,
+div.container1 .container div.modal input[type=email]:active,
+div.container1 .container div.modal input[type=email]:focus {
+  border: none;
+  border-bottom: 1px solid black;
+}
+div.container1 .container div.modal .pick-a-date,
+div.container1 .container div.modal .pick-a-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.container1 .container div.modal .pick-a-date p,
+div.container1 .container div.modal .pick-a-time p {
+  width: 100px;
+  margin-right: 20px;
+}
+div.container1 .container div.modal .pick-a-date #day, div.container1 .container div.modal .pick-a-date #month {
+  width: 80px;
+  height: 43px;
+}
+div.container1 .container div.modal .pick-a-date #year {
+  width: 97px;
+  height: 43px;
+}
+div.container1 .container div.modal .pick-a-time #hour, div.container1 .container div.modal .pick-a-time #minute {
+  width: 80px;
+  height: 43px;
+}
+div.container1 .container div.modal .pick-a-time #hour {
+  margin-left: 0;
+}
+div.container1 .container div.modal .pick-a-time .pick-a-time-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 75px;
+  height: 43px;
+  padding-left: 16px;
+  padding-right: 7px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  position: relative;
+}
+div.container1 .container div.modal .pick-a-time .pick-a-time-select #am-pm {
+  margin: 0;
+  width: auto;
+}
+div.container1 .container div.modal .pick-a-time .pick-a-time-select #am-pm .fa-angle-down {
+  margin-left: 13px;
+  width: auto;
+  pointer-events: none;
+}
+div.container1 .container div.modal .pick-a-time .pick-a-time-select .select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 50px;
+  width: 106px;
+  height: 103px;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid black;
+}
+div.container1 .container div.modal .pick-a-time .pick-a-time-select .select p {
+  width: 60px;
+  height: 28px;
+  text-align: center;
+}
+div.container1 .container div.modal .pick-a-time .pick-a-time-select .hide {
+  display: none;
+}
+div.container1 .container div.modal div.people {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding: 0 30px;
+  padding-bottom: 16px;
+}
+div.container1 .container div.modal .reservation {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  padding: 18px 102px;
+}
+
+div.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+div.container2 div.burger {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
+}
+div.container2 div.burger > .linie {
+  margin-bottom: 6px;
+  height: 6px;
+  width: 160px;
+  background-color: #9e7f66;
+}/*# sourceMappingURL=index2.css.map */

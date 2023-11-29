@@ -1,6 +1,6 @@
 const articole = [
     {
-        img: './Imagini/Article1.png',
+        img: './Imagini/Article1 Phone.jpg',
         alt: 'Seared Salmon Filet',
         title: 'Seared Salmon Filet',
         description: 'Our locally sourced salmon served with a refreshing buckwheat summer salad.',
@@ -46,9 +46,7 @@ function createArticle(articol) {
 }
 
 function createArticleList(listaArticole) {
-    listaArticole.forEach(element => {
-        createArticle(element)
-    })
+    listaArticole.forEach(createArticle)
 }
 
 createArticleList(articole)
@@ -75,33 +73,64 @@ const evenimente = [
     },
 ]
 
-const container4 = document.querySelector("#container4")
+const img2 = document.getElementById("img2")
+const h2 = document.getElementById("c4-h2")
+const paragraf = document.getElementById("c4-p")
 
-function createContainer(eveniment) {
-    const container = document.createElement('div')
+const ancora1 = document.getElementById("ancora1")
+const ancora2 = document.getElementById("ancora2")
+const ancora3 = document.getElementById("ancora3")
 
-    const img = document.createElement('img')
-    img.setAttribute('src', eveniment.img)
-    img.setAttribute('alt', eveniment.alt)
-    container.appendChild(img)
+const linie1 = document.querySelector("#linie-event1")
+const linie2 = document.querySelector("#linie-event2")
+const linie3 = document.querySelector("#linie-event3")
 
-    const booking = document.createElement('div')
-    const text = document.createElement('div')
+ancora1.addEventListener('click', () => {
+    img2.setAttribute('src', evenimente[0].img)
+    img2.setAttribute('alt', evenimente[0].alt)
 
-    const h2 = document.createElement('h2')
-    h2.textContent = eveniment.title
-    text.appendChild(h2)
+    h2.textContent = evenimente[0].title
+    paragraf.textContent = evenimente[0].description
 
-    const p = createElement('p')
-    p = textContent = eveniment.description
-    text.appendChild(p)
+    linie1.classList.add('color')
+    linie2.classList.remove('color')
+    linie3.classList.remove('color')
+})
 
-    const buton = document.createElement('button')
-    buton.textContent = 'book a table'
+ancora2.addEventListener('click', () => {
+    img2.setAttribute('src', evenimente[1].img)
+    img2.setAttribute('alt', evenimente[1].alt)
 
-    const grupEvents = document.createElement('div')
-    const grupLinii = document.createElement('div')
+    h2.textContent = evenimente[1].title
+    paragraf.textContent = evenimente[1].description
 
-    const linie = document.createElement('div')
+    linie1.classList.remove('color')
+    linie2.classList.add('color')
+    linie3.classList.remove('color')
+})
 
+ancora3.addEventListener('click', () => {
+    img2.setAttribute('src', evenimente[2].img)
+    img2.setAttribute('alt', evenimente[2].alt)
+
+    h2.textContent = evenimente[2].title
+    paragraf.textContent = evenimente[2].description
+
+    linie1.classList.remove('color')
+    linie2.classList.remove('color')
+    linie3.classList.add('color')
+})
+
+
+const burger1 = document.getElementById("burger1")
+const burger2 = document.getElementById("burger2")
+function createBurger(burger) {
+    for (let i = 0; i < 6; i++) {
+        const linie = document.createElement('div')
+        linie.classList.add('linie')
+        burger.appendChild(linie)
+    }
 }
+createBurger(burger1)
+createBurger(burger2)
+

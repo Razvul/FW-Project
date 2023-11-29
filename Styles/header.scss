@@ -9,8 +9,10 @@
 
 header {
     background-image: url(../Imagini/Bitmap.jpg);
+    background-position: right top;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'League Spartan';
 
     .container {
         height: 820px;
@@ -22,7 +24,6 @@ header {
         h2 {
             font-weight: bold;
             font-size: $h2FontSize;
-            font-weight: lighter;
             line-height: $h2LineHeight;
         }
 
@@ -60,6 +61,60 @@ header {
                     background-color: $white;
                     border: 1px solid black;
                     transition: all ease-in-out 0.15s;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1080px){
+    header{
+        background-image: url(../Imagini/Tablet1.jpg);
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            padding: 0;
+            padding-top: 520px;
+            padding-bottom: 216px;
+
+            div{
+                margin-top: 38px;
+                margin-bottom: 52px;
+                height: auto;
+                width: auto;
+                text-align: center;
+                color: white;
+
+                h1{
+                    width: 540px;
+                }
+                p{
+                    margin-top: 20px;
+                    width: 573px;
+                }
+                button{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    header{
+        background-image: url(../Imagini/Phone1.jpg);
+        .container{
+            div{
+                h1{
+                    font-size: 32px;
+                }
+                p{
+                    font-size: $p2FontSize;
+                    margin: 21px 0 53px 0;
                 }
             }
         }

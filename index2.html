@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation</title>
+    <link href="Styles/index2.css" rel="stylesheet" />
+    <link href="Styles/footer.css" rel="stylesheet" />
+    <script src="index2.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container1">
+      <div class="container">
+        <h2>dine</h2>
+        <div class="text">
+          <h1>Reservations</h1>
+          <p>
+            We can't wait to host you. If you have any special requirements
+            please feel free to call on the phone number below. We'll be happy
+            to accommodate you.
+          </p>
+        </div>
+        <div class="modal">
+          <input type="text" name="name" id="name" placeholder="Name" />
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <div class="pick-a-date">
+            <p>Pick a date</p>
+            <input type="number" name="day" id="day" placeholder="DD" />
+            <input type="number" name="month" id="month" placeholder="MM" />
+            <input type="number" name="year" id="year" placeholder="YYYY" />
+          </div>
+          <div class="pick-a-time">
+            <p>Pick a time</p>
+            <input type="number" name="hour" id="hour" placeholder="09" />
+            <input type="number" name="minute" id="minute" placeholder="00" />
+            <div class="pick-a-time-select">
+              <p id="am-pm">AM
+                <i id="fa-angle-down" class="fa-solid fa-angle-down"></i>
+              </p>
+              <div id="select-time-half" class="select hide">
+                <p>AM</p>
+                <p>PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="people">
+            <div class="minus">-</div>
+            <p><b>4 people</b></p>
+            <div class="plus">+</div>
+          </div>
+          <button class="reservation">make reservation</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container2">
+      <div id="burger1" class="burger"></div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <h2>dine</h2>
+        <div class="info1">
+          <p>marthwaite, sedbergh</p>
+          <p>cumbria</p>
+          <p>+ 00 44 123 4567</p>
+        </div>
+        <div class="info2">
+          <p>open times</p>
+          <p>mon - fri: 09:00 am - 10:00 pm</p>
+          <p>sat - sun: 09:00 am - 11:30 pm</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

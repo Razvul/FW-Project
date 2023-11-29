@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "League Spartan";
 }
 
 div.container1 {
@@ -215,7 +216,6 @@ div.container5 button:hover {
 
 div.burger {
   width: 160px;
-  height: 76px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -223,7 +223,7 @@ div.burger {
 }
 div.burger > .linie {
   margin-bottom: 6px;
-  height: 20px;
+  height: 6px;
   width: 160px;
   background-color: #9e7f66;
 }
@@ -238,4 +238,246 @@ div.burger > .linie {
   position: absolute;
   left: 10%;
   top: -5%;
+}
+
+@media screen and (max-width: 1080px) {
+  div.container1 {
+    padding: 0;
+    width: auto;
+  }
+  div.container1 .container {
+    flex-direction: column;
+  }
+  div.container1 .container img.imagine {
+    margin-top: -96px;
+    margin-left: 0;
+    width: 572px;
+    height: 360px;
+  }
+  div.container1 .container div {
+    margin: 0;
+    margin-bottom: 102px;
+    text-align: center;
+    width: auto;
+  }
+  div.container1 .container div h2 {
+    width: 457px;
+  }
+  div.container1 .container div p {
+    width: 457px;
+    margin-top: 27px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  div.container2 {
+    width: auto;
+    padding: 0;
+  }
+  div.container2 .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 118px;
+    width: auto;
+  }
+  div.container2 .container img.imagine {
+    width: 572px;
+    height: 360px;
+  }
+  div.container2 .container div {
+    text-align: center;
+    margin: 0;
+  }
+  div.container2 .container div h2 {
+    margin-top: 102px;
+    margin-bottom: 27px;
+    width: 400px;
+  }
+  div.container2 .container div p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  div.container3 {
+    padding: 142px 0 102px 0;
+  }
+  div.container3 .container {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.container3 .container .text {
+    text-align: center;
+    margin-bottom: 54px;
+  }
+  div.container3 .container #listaArticole {
+    margin: 0;
+    width: 573px;
+    height: 386px;
+  }
+  div.container3 .container #listaArticole article img {
+    margin-right: 60px;
+  }
+  div.container4 {
+    margin: 0;
+    width: auto;
+  }
+  div.container4 .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0;
+    height: auto;
+    width: auto;
+    position: relative;
+  }
+  div.container4 .container img {
+    margin: 0;
+    width: 573px;
+    height: 360px;
+  }
+  div.container4 .container div.booking {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  div.container4 .container div.booking div.text {
+    order: 1;
+    margin-bottom: 60px;
+  }
+  div.container4 .container div.booking div.text h2 {
+    margin-bottom: 19px;
+  }
+  div.container4 .container div.booking div.text p {
+    width: 457px;
+  }
+  div.container4 .container div.booking button {
+    order: 3;
+  }
+  div.container4 .container div.booking .grup-events {
+    order: 0;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    margin: 57px auto 47px auto;
+  }
+  div.container4 .container div.booking .grup-events .grup-linii {
+    margin: 0;
+    order: 1;
+  }
+  div.container4 .container div.booking .grup-events .grup-linii .linie-event {
+    margin: 0;
+  }
+  div.container4 .container div.booking .grup-events ul.events {
+    order: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    height: auto;
+  }
+  div.container5 {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    padding: 72px 0 64px 0;
+  }
+  div.container5 h2 {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  div.container1 {
+    width: auto;
+  }
+  div.container1 .container {
+    width: 327px;
+    height: 662px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.container1 .container img.imagine {
+    height: 327px;
+    height: 400px;
+  }
+  div.container1 .container div {
+    margin-top: 91px;
+    margin-bottom: 101px;
+  }
+  div.container1 .container div h2 {
+    margin-bottom: 13px;
+    font-size: 32px;
+  }
+  div.contaier2 {
+    width: auto;
+  }
+  div.contaier2 .container img.imagine {
+    width: 327px;
+    height: 400px;
+  }
+  div.contaier2 .container div h2 {
+    font-size: 32px;
+  }
+  div.contaier2 .container div p {
+    font-size: 18px;
+  }
+  div.container3 .container {
+    padding-bottom: 102px;
+  }
+  div.container3 .container #listaArticole {
+    height: auto;
+    margin-top: 85px;
+  }
+  div.container3 .container #listaArticole article {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  div.container3 .container #listaArticole article div {
+    text-align: center;
+  }
+  div.container3 .container #listaArticole article div h2 {
+    font-size: 32px;
+  }
+  div.container3 .container #listaArticole article div p {
+    font-size: 16px;
+  }
+  div.container3 .container #listaArticole article img {
+    width: 327px;
+    height: 245px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 36px;
+    margin-top: 56px;
+  }
+  div.container4 .container {
+    padding-top: 80px;
+  }
+  div.container4 .container img {
+    width: 327px;
+    height: 400px;
+  }
+  div.container4 .container div.booking div.text h2 {
+    font-size: 32px;
+  }
+  div.container4 .container div.booking div.text p {
+    font-size: 16px;
+  }
+  div.container4 .container div.booking .grup-events {
+    flex-direction: column;
+  }
+  div.container4 .container div.booking .grup-events ul.events {
+    flex-direction: column;
+  }
+  div.container4 .container div.booking .grup-events ul.events li {
+    margin-bottom: 16px;
+  }
+  div.container5 h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  div.burger {
+    display: none;
+  }
 }/*# sourceMappingURL=container.css.map */

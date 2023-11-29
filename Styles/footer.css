@@ -9,6 +9,7 @@ footer {
   color: #ffffff;
   height: 240px;
   display: flex;
+  font-family: "League Spartan";
 }
 footer .container {
   width: 1110px;
@@ -21,12 +22,48 @@ footer .container {
 footer .container h2 {
   font-size: 48px;
 }
-footer .container div.info1, footer .container div.info2 {
+footer .container div.info1,
+footer .container div.info2 {
   width: 244px;
   height: 84px;
 }
-footer .container div.info1 p, footer .container div.info2 p {
+footer .container div.info1 p,
+footer .container div.info2 p {
   font-size: 16px;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1080px) {
+  footer {
+    position: relative;
+    height: auto;
+  }
+  footer .container {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    padding-top: 66px;
+    padding-bottom: 62px;
+  }
+  footer .container h2 {
+    position: absolute;
+    top: 64px;
+    left: 39px;
+  }
+  footer .container div.info1 {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .container {
+    text-align: center;
+  }
+  footer .container h2 {
+    position: static;
+  }
+  footer .container div.info1 {
+    line-height: 17px;
+    margin: 42px 0;
+  }
 }/*# sourceMappingURL=footer.css.map */

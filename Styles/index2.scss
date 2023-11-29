@@ -1,0 +1,195 @@
+@import 'format';
+@import 'colors';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan';
+}
+
+div.container1 {
+    background-image: url('../Imagini/Modal1.jpg');
+    width: auto;
+    padding-bottom: 154px;
+    padding-top: 65px;
+    position: relative;
+
+    .container {
+        color: $white;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        height: 600px;
+        margin: 258px 165px 0 165px;
+
+        h2 {
+            font-size: $h2FontSize;
+            line-height: $h2LineHeight;
+            position: absolute;
+            left: 165px;
+            top: 65px;
+        }
+
+        .text {
+            width: 445px;
+            height: 188px;
+
+
+            h1 {
+                font-size: $h1FontSize;
+                line-height: $h1LineHeight;
+                margin-bottom: 18px;
+            }
+
+            p {
+                font-size: $p1FontSize;
+                line-height: $p1LineHeight;
+            }
+        }
+
+        div.modal {
+            background-color: $white;
+            width: 540px;
+            height: 545px;
+            margin-bottom: -100px;
+            padding: 50px 48px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: black;
+
+            input[type=text],
+            input[type=email] {
+                border: none;
+                border-bottom: 1px solid black;
+                font-size: 20px;
+                line-height: 28px;
+
+                &:active,
+                &:focus {
+                    border: none;
+                    border-bottom: 1px solid black;
+                }
+            }
+
+            .pick-a-date,
+            .pick-a-time {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p{
+                    width: 100px;
+                    margin-right: 20px;
+                }
+            }
+
+            .pick-a-date{
+                #day, #month{
+                    width: 80px;
+                    height: 43px;
+                }
+                #year{
+                    width: 97px;
+                    height: 43px;
+                }
+            }
+
+            .pick-a-time {
+                #hour, #minute{
+                    width: 80px;
+                    height: 43px;
+                }
+                #hour{
+                    margin-left: 0;
+                }
+                .pick-a-time-select {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    width: 75px;
+                    height: 43px;
+                    padding-left: 16px;
+                    padding-right: 7px;
+                    border-bottom: 1px solid black;
+                    cursor: pointer;
+                    position: relative;
+
+                    #am-pm {
+                        margin: 0;
+                        width: auto;
+
+                        .fa-angle-down {
+                            margin-left: 13px;
+                            width: auto;
+                            pointer-events: none;
+                        }
+                    }
+
+                    .select {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        position: absolute;
+                        top: 50px;
+                        width: 106px;
+                        height: 103px;
+                        z-index: 1;
+                        background-color: white;
+                        border: 1px solid black;
+
+                        p {
+                            width: 60px;
+                            height: 28px;
+                            text-align: center;
+                        }
+                    }
+
+                    .hide {
+                        display: none;
+                    }
+                }
+            }
+
+            div.people {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid black;
+                padding: 0 30px;
+                padding-bottom: 16px;
+            }
+
+            .reservation {
+                background-color: black;
+                color: white;
+                text-transform: uppercase;
+                padding: 18px 102px;
+            }
+        }
+    }
+}
+
+
+div.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+    div.burger {
+        width: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 6px;
+
+        >.linie {
+            margin-bottom: 6px;
+            height: 6px;
+            width: 160px;
+            background-color: $beaver;
+        }
+    }
+}
