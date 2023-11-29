@@ -48,15 +48,30 @@
           </div>
           <div class="pick-a-time">
             <p>Pick a time</p>
-            <input type="number" name="hour" id="hour" placeholder="09" />
-            <input type="number" name="minute" id="minute" placeholder="00" />
+            <input
+              type="number"
+              name="hour"
+              id="hour"
+              placeholder="09"
+              min="0"
+              max="23"
+            />
+            <input
+              type="number"
+              name="minute"
+              id="minute"
+              placeholder="00"
+              min="0"
+              max=""
+            />
             <div class="pick-a-time-select">
-              <p id="am-pm">AM
+              <p id="am-pm">
+                AM
                 <i id="fa-angle-down" class="fa-solid fa-angle-down"></i>
               </p>
               <div id="select-time-half" class="select hide">
-                <p>AM</p>
-                <p>PM</p>
+                <p id="am">AM</p>
+                <p id="pm">PM</p>
               </div>
             </div>
           </div>

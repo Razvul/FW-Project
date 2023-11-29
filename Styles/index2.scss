@@ -80,7 +80,7 @@ div.container1 {
                 align-items: center;
                 p{
                     width: 100px;
-                    margin-right: 20px;
+                    margin-right: 0;
                 }
             }
 
@@ -88,17 +88,26 @@ div.container1 {
                 #day, #month{
                     width: 80px;
                     height: 43px;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    padding-left: 16px;
                 }
                 #year{
-                    width: 97px;
+                    width: 75px;
                     height: 43px;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    padding-left: 16px;
                 }
             }
 
             .pick-a-time {
                 #hour, #minute{
                     width: 80px;
+                    border: none;
                     height: 43px;
+                    border-bottom: 1px solid black;
+                    padding-left: 16px;
                 }
                 #hour{
                     margin-left: 0;
@@ -166,6 +175,11 @@ div.container1 {
                 color: white;
                 text-transform: uppercase;
                 padding: 18px 102px;
+                cursor: pointer;
+                &:hover{
+                    color: black;
+                    background-color: white;
+                }
             }
         }
     }
@@ -191,5 +205,54 @@ div.container2 {
             width: 160px;
             background-color: $beaver;
         }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    div.container1{
+        background-size: cover;
+        height: 600px;
+        .container{
+            padding: 0;
+            margin-top: 166px;
+            flex-direction: column;
+            align-items: center;
+            .text{
+                width: 689px;
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 48px;
+            }
+        }
+    }
+    div.container2{
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.container1{
+        .container{
+            margin-top: 56px;
+            h2{
+                position: static;
+                text-align: center;
+            }
+            .text{
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                width: 327px;
+                margin-bottom: 100px;
+                h1{
+                    font-size: 32px;
+                }
+                p{
+                    margin: 0;
+                    font-size: $p2FontSize;
+                }
+            }
+        }
+        
     }
 }
