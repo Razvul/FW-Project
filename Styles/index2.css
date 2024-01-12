@@ -64,6 +64,9 @@ div.container1 .container div.modal input[type=email]:focus {
   border: none;
   border-bottom: 1px solid black;
 }
+div.container1 .container div.modal input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 div.container1 .container div.modal .pick-a-date,
 div.container1 .container div.modal .pick-a-time {
   display: flex;
@@ -112,6 +115,14 @@ div.container1 .container div.modal .pick-a-time .pick-a-time-select {
   cursor: pointer;
   position: relative;
 }
+div.container1 .container div.modal .pick-a-time .pick-a-time-select:hover {
+  background-color: gray;
+  color: white;
+  border-bottom: none;
+}
+div.container1 .container div.modal .pick-a-time .pick-a-time-select:hover .select p {
+  color: black;
+}
 div.container1 .container div.modal .pick-a-time .pick-a-time-select #am-pm {
   margin: 0;
   width: auto;
@@ -126,6 +137,7 @@ div.container1 .container div.modal .pick-a-time .pick-a-time-select .select {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  align-items: center;
   position: absolute;
   top: 50px;
   width: 106px;
@@ -133,14 +145,27 @@ div.container1 .container div.modal .pick-a-time .pick-a-time-select .select {
   z-index: 1;
   background-color: white;
   border: 1px solid black;
+  padding: 0;
 }
 div.container1 .container div.modal .pick-a-time .pick-a-time-select .select p {
   width: 60px;
   height: 28px;
   text-align: center;
 }
+div.container1 .container div.modal .pick-a-time .pick-a-time-select .select p:hover {
+  background-color: gray;
+  color: white;
+}
 div.container1 .container div.modal .pick-a-time .pick-a-time-select .hide {
   display: none;
+}
+div.container1 .container div.modal .minus, div.container1 .container div.modal .plus {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  width: 11px;
+  height: 24px;
 }
 div.container1 .container div.modal div.people {
   display: flex;
@@ -148,6 +173,9 @@ div.container1 .container div.modal div.people {
   border-bottom: 1px solid black;
   padding: 0 30px;
   padding-bottom: 16px;
+}
+div.container1 .container div.modal div.people #number-people {
+  font-weight: bold;
 }
 div.container1 .container div.modal .reservation {
   background-color: black;

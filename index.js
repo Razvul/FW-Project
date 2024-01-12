@@ -131,6 +131,5 @@ function createBurger(burger) {
         burger.appendChild(linie)
     }
 }
-createBurger(burger1)
+// createBurger(burger1)
 createBurger(burger2)
-

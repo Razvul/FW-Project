@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #17192b;
+}
+
+div.formular {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  gap: 20px;
+  height: 100%;
+}
+div.formular h1 {
+  font-size: 80px;
+  line-height: 80px;
+}
+div.formular h2 {
+  font-size: 48px;
+  line-height: 48px;
+}
+div.formular form {
+  background-color: #242b37;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+div.formular form input {
+  width: 200px;
+  height: 25px;
+}
+div.formular form button {
+  width: 120px;
+  height: 30px;
+  background-color: black;
+  color: white;
+}
+div.formular form button:hover {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+div.formular p a {
+  color: #9e7f66;
+  text-decoration: none;
+}/*# sourceMappingURL=login.css.map */

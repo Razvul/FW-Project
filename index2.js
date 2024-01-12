@@ -1,6 +1,5 @@
 const listaButoane = document.querySelectorAll('button')
 listaButoane.forEach(buton => {
-
     buton.addEventListener('click', () => {
         window.location = 'index2.html'
     })
@@ -44,3 +43,35 @@ for (let i = 0; i < children.length; i++) {
         angleDown.style.transform = 'rotate(0deg)'
     })
 }
+
+const minus = document.getElementById('minus')
+const plus = document.getElementById('plus')
+const numarPersoane = document.getElementById('number-people')
+
+function getNumberOfPeople(numar) {
+    numberPeopleArray = numar.split(' ')
+    let numarPersoanePrezente = parseInt(numberPeopleArray[0])
+    return numarPersoanePrezente
+}
+
+minus.addEventListener('click', (e) => {
+    e.preventDefault()
+    let numarPers = getNumberOfPeople(numarPersoane.textContent)
+    if (numarPers === 1) {
+        numarPersoane.textContent = `${numarPers} people`
+    }
+    else {
+        numarPersoane.textContent = `${numarPers - 1} people`
+    }
+})
+
+plus.addEventListener('click', (e) => {
+    e.preventDefault()
+    let numarPers = getNumberOfPeople(numarPersoane.textContent)
+    numarPersoane.textContent = `${numarPers + 1} people`
+})
+
+const btnRezervare = document.querySelector("#reservation")
+btnRezervare.addEventListener("click",(e)=>{
+    e.target.preventDefault()
+})

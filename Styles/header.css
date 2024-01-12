@@ -94,6 +94,7 @@ header .container div button:hover {
 @media screen and (max-width: 768px) {
   header {
     background-image: url(../Imagini/Phone1.jpg);
+    background-position: top center;
   }
   header .container div h1 {
     font-size: 32px;
